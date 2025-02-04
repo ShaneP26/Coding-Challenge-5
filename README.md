@@ -30,3 +30,22 @@ const order = {
 
 // Call the method to log order details
 order.displayOrder();
+// Task 3 - Shopping Cart Array Manipulation
+
+// Declare an array with three product names
+let cartItems = ["Laptop", "Phone", "Headphones"];
+
+// Add a new product at the end
+cartItems.push("Tablet");
+
+// Remove the last item
+cartItems.pop();
+
+// Add an item at the beginning
+cartItems.unshift("Smartwatch");
+
+// Remove the first item
+cartItems.shift();
+
+// Log the final cart items
+console.log("Final Cart Items:", cartItems);
