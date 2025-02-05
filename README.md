@@ -103,3 +103,18 @@ let tax = calculateTax(amount, taxRate);
 
 // Log the calculated tax
 console.log(`For an amount of $${amount}, the tax at ${taxRate * 100}% is $${tax.toFixed(2)}.`);
+// Task 9 - Discount Application Function Expression
+
+// Function expression to apply discount
+const applyDiscount = function(price, discount) {
+    return price - (price * discount);
+};
+
+// Example usage
+let originalPrice = 200;
+let discountRate = 0.15; // 15% discount
+let discountedPrice = applyDiscount(originalPrice, discountRate);
+
+// Log the result
+console.log(`Original Price: $${originalPrice}`);
+console.log(`Discounted Price: $${discountedPrice.toFixed(2)}`);
