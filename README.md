@@ -118,3 +118,14 @@ let discountedPrice = applyDiscount(originalPrice, discountRate);
 // Log the result
 console.log(`Original Price: $${originalPrice}`);
 console.log(`Discounted Price: $${discountedPrice.toFixed(2)}`);
+// Task 10 - Loyalty Points Arrow Function
+
+// Arrow function to calculate loyalty points
+const calculatePoints = purchaseAmount => Math.floor(purchaseAmount / 10);
+
+// Example usage
+let purchaseAmount = 125;
+let points = calculatePoints(purchaseAmount);
+
+// Log the result
+console.log(`For a purchase of $${purchaseAmount}, you earn ${points} loyalty points.`);
